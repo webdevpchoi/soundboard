@@ -8,19 +8,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!--soundboard-->
     <h1>Soundboard</h1>
     <ul class="sound-panel">
-      <li>a</li>
-      <li>s</li>
-      <li>d</li>
-      <li>f</li>
-      <li>g</li>
-      <li>h</li>
-      <li>j</li>
-      <li>k</li>
-      <li>l</li>
-      <li>'</li>
+      <li data-key="a">a</li>
+      <li data-key="s">s</li>
+      <li data-key="d">d</li>
+      <li data-key="f">f</li>
+      <li data-key="g">g</li>
+      <li data-key="h">h</li>
+      <li data-key="j">j</li>
+      <li data-key="k">k</li>
+      <li data-key="l">l</li>
     </ul>
+    <!--audio-->
+    <audio src="/sounds/boom.wav" data-key="a"></audio>
+    <audio src="/sounds/clap.wav" data-key="s"></audio>
+    <audio src="/sounds/hihat.wav" data-key="d"></audio>
+    <audio src="/sounds/kick.wav" data-key="f"></audio>
+    <audio src="/sounds/openhat.wav" data-key="g"></audio>
+    <audio src="/sounds/ride.wav" data-key="h"></audio>
+    <audio src="/sounds/snare.wav" data-key="j"></audio>
+    <audio src="/sounds/tink.wav" data-key="k"></audio>
+    <audio src="/sounds/tom.wav" data-key="l"></audio>
+
+    <!-- scripts -->
     <script src="index.js"></script>
   </body>
 </html>

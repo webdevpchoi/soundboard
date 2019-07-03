@@ -1,9 +1,10 @@
 window.addEventListener("load", () => {
   console.log("loaded script!");
-  function playSound() {
-    console.log(this);
+  function playSound(e) {
+    const audio = document.querySelector(`audio[data-key=${e.key}]`);
+    if (!audio) return;
+    audio.play();
   }
-  const allSounds = document.querySelectorAll(".sound-panel > li");
-  console.log(allSounds);
-  document.addEventListener("keypress", playSound);
+  //listen for all keypress events on the window
+  window.addEventListener("keypress", playSound);
 });
