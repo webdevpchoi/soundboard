@@ -23,4 +23,9 @@ ul > li {
   background: green;
   width: 100px;
   height: 50px;
+  transition: background 100ms;
+}
+
+.play {
+  background: red;
 }
