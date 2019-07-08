@@ -26,6 +26,6 @@ ul > li {
   transition: background 100ms;
 }
 
-.play {
+.playing {
   background: red;
 }
