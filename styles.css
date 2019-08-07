@@ -66,6 +66,10 @@ p {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  font-size: 5em;
+}
+h1 {
+  font-size: 1em;
 }
 .playing {
   filter: brightness(100%);
@@ -97,4 +101,22 @@ li[data-key="k"] {
 }
 li[data-key="l"] {
   background: #8fc93a;
+}
+@media (max-width: 825px) {
+  .sound-panel {
+    flex-flow: column;
+  }
+  .sound-panel > li {
+    border-radius: 0;
+  }
+  .container {
+    height: auto;
+    width: 100%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  p {
+    margin-bottom: 0.5rem;
+  }
 }
